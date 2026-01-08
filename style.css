@@ -1,3 +1,148 @@
-body{
-    background-color: brown;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #1f2933;
+    background: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn.green {
+    background: #22c55e;
+    color: #fff;
+}
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid #22c55e;
+    color: #22c55e;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+                url("images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 120px 60px;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.badge {
+    background: #22c55e;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #22c55e;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons button {
+    margin-right: 15px;
+}
+
+/* PROBLEMS */
+.problems {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.problems h2 {
+    font-size: 36px;
+}
+
+.sub {
+    margin: 15px 0 40px;
+    color: #6b7280;
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 10px;
+    background: #f9fafb;
+}
+
+/* SOLUTION */
+.solution {
+    padding: 80px 60px;
+    background: #f0fdf4;
+}
+
+.solution h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.solution ul li {
+    margin-bottom: 12px;
+    list-style: none;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 80px 40px;
+    background: #f9fafb;
+}
+
+/* FOOTER */
+footer {
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
 }
